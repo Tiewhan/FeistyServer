@@ -26,4 +26,12 @@ public func routes(_ router: Router) throws {
       
   }
   
+  router.post(LoginCredentials.self, at: "login") { request, data -> String in
+    
+    let loginController = LoginController()
+    
+    return loginController.verifyLoginCredentials(data)
+    
+  }
+  
 }
