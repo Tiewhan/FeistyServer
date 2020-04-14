@@ -1,0 +1,25 @@
+{
+  "users":[
+    {
+      "user_id":"1A",
+      "username":"Travis",
+      "status":"Online"
+    },
+    {
+      "user_id":"2B",
+      "username":"Peter Pan",
+      "status":"Offline"
+    },
+    {
+      "user_id":"3E",
+      "username":"Jason",
+      "status":"Online"
+    },
+    {
+      "user_id":"4E",
+      "username":"Jackson",
+      "status":"Away"
+    }
+  ]
+}
+
