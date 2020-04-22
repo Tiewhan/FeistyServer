@@ -11,21 +11,11 @@ extension Array {
   
   public func convertByteArrayToJSON(withData data: [UInt8]) -> String {
     
-    var jsonString = "{ \"data\" : [ "
-    var isFirstIteration = true
+    let stringOfData = data.map { number in
+      return "\(number)"
+    }.joined(separator: ",")
     
-    data.forEach { number in
-      
-      if isFirstIteration {
-        isFirstIteration = false
-        jsonString += "\(number)"
-      } else {
-        jsonString += ",\(number)"
-      }
-      
-    }
-    
-    jsonString += " ] }"
+    let jsonString = "{ \"data\" : [\(stringOfData)] }"
     
     return jsonString
     
